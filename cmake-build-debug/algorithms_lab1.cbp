@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ArrayList.h">
+			<Option target="algorithms_lab1"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/LinkedList.h">
 			<Option target="algorithms_lab1"/>
 		</Unit>

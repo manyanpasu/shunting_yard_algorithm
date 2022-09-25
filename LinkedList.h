@@ -49,7 +49,7 @@ public:
         return current->data;
     }
 
-    T add(int index, T x) { // append
+    T add(int index, T x) { // под add имеется ввиду вставка
         Node **current = &head;
         for (int i = 0; i < index; i++) {
             current = &((*current)->next);

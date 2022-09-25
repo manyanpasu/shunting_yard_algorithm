@@ -172,8 +172,11 @@ CMakeFiles/algorithms_lab1.dir/main.cpp.o: /mnt/c/Users/theta-sigma/CLionProject
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/bits/istream.tcc \
-  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/LinkedList.h
+  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/LinkedList.h \
+  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ArrayList.h
 
+
+/mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ArrayList.h:
 
 /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/LinkedList.h:
 
