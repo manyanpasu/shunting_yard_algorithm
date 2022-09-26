@@ -2,6 +2,7 @@
 
 #include "LinkedList.h"
 #include "ArrayList.h"
+#include "ShuntingYard.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
@@ -138,6 +139,13 @@ int main() {
             std::cout << ll.get(i) << " ";
         }
     }
+
+    std::cout << "\n\n//////////////\n\n";
+
+    ShuntingYard sy;
+
+    // ( 2 - 3 + 4 ) * ( 5 + 6 * 7 )
+    sy.convertFromInput();
 
     return 0;
 }

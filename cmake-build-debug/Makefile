@@ -129,6 +129,30 @@ algorithms_lab1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithms_lab1.dir/build.make CMakeFiles/algorithms_lab1.dir/build
 .PHONY : algorithms_lab1/fast
 
+ShuntingYard.o: ShuntingYard.cpp.o
+.PHONY : ShuntingYard.o
+
+# target to build an object file
+ShuntingYard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithms_lab1.dir/build.make CMakeFiles/algorithms_lab1.dir/ShuntingYard.cpp.o
+.PHONY : ShuntingYard.cpp.o
+
+ShuntingYard.i: ShuntingYard.cpp.i
+.PHONY : ShuntingYard.i
+
+# target to preprocess a source file
+ShuntingYard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithms_lab1.dir/build.make CMakeFiles/algorithms_lab1.dir/ShuntingYard.cpp.i
+.PHONY : ShuntingYard.cpp.i
+
+ShuntingYard.s: ShuntingYard.cpp.s
+.PHONY : ShuntingYard.s
+
+# target to generate assembly for a file
+ShuntingYard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithms_lab1.dir/build.make CMakeFiles/algorithms_lab1.dir/ShuntingYard.cpp.s
+.PHONY : ShuntingYard.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algorithms_lab1"
+	@echo "... ShuntingYard.o"
+	@echo "... ShuntingYard.i"
+	@echo "... ShuntingYard.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

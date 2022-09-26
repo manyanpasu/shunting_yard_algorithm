@@ -5,6 +5,10 @@
 #ifndef ALGORITHMS_LAB1_ARRAYLIST_H
 #define ALGORITHMS_LAB1_ARRAYLIST_H
 
+namespace arns {
+    const int defaultCapacity = 3;
+}
+
 template<typename T>
 class ArrayList {
 private:
@@ -24,7 +28,7 @@ private:
 
 public:
     ArrayList() {
-        capacity = 3;
+        capacity = arns::defaultCapacity;
         array = new T[capacity];
         mSize = 0;
     }
@@ -40,6 +44,17 @@ public:
     T set(int index, T x) { // индекс всегда корректный
         array[index] = x;
         return array[index];
+    }
+
+    void makeEmpty() {
+        delete[] array;
+        capacity = arns::defaultCapacity;
+        mSize = 0;
+    }
+
+    T append(T x) { // под add имеется ввиду вставка
+        this->add(mSize, x);
+        return this->get(mSize - 1);
     }
 
     T add(int index, T x) { // под add имеется ввиду вставка

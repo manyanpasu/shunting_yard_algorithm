@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ShuntingYard.cpp" "CMakeFiles/algorithms_lab1.dir/ShuntingYard.cpp.o" "gcc" "CMakeFiles/algorithms_lab1.dir/ShuntingYard.cpp.o.d"
   "/mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/main.cpp" "CMakeFiles/algorithms_lab1.dir/main.cpp.o" "gcc" "CMakeFiles/algorithms_lab1.dir/main.cpp.o.d"
   )
 

@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/algorithms_lab1.dir/main.cpp.o -o algorithms_lab1 
+/usr/bin/c++ -g CMakeFiles/algorithms_lab1.dir/main.cpp.o CMakeFiles/algorithms_lab1.dir/ShuntingYard.cpp.o -o algorithms_lab1 
