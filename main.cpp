@@ -188,16 +188,22 @@ int main() {
     std::cout << "\n\n//////////////\n\n";
 
     ArrayList<string> ti;
+    ti.append("( 1 + 2 ) )");
     ti.append("( 2 - 3 + 4 ) * ( 5 + 6 * 7 )");
     ti.append("3 + 4 * 2 / ( 1 - 5 ) ^ 2 ^ 3");
     ti.append("sin ( cos ( 2 , 3 ) / 3 * 314 )");
     ti.append("sin ( cos ( 2, 3 ) / 3 * 314 )");
+    ti.append("( 1 + 2 ) )");
+
 
     ArrayList<string> to;
+    to.append("MISMATCHED_PARENTHESES_ERROR");
     to.append("2 3 - 4 + 5 6 7 * + * ");
     to.append("3 4 2 * 1 5 - 2 3 ^ ^ / + ");
     to.append("2 3 cos 3 / 314 * sin ");
     to.append("BAD_TOKEN_ERROR");
+    to.append("MISMATCHED_PARENTHESES_ERROR");
+
 
     ShuntingYard sy;
 

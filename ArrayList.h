@@ -51,7 +51,6 @@ public:
     }
 
     void makeEmpty() {
-        delete[] array;
         capacity = arns::defaultCapacity;
         mSize = 0;
     }

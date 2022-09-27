@@ -153,7 +153,6 @@ CMakeFiles/algorithms_lab1.dir/ShuntingYard.cpp.o
  /usr/include/c++/9/cstring
  /usr/include/string.h
  /usr/include/strings.h
- /usr/include/c++/9/stdexcept
  /usr/include/c++/9/iostream
  /usr/include/c++/9/ostream
  /usr/include/c++/9/ios
@@ -162,6 +161,7 @@ CMakeFiles/algorithms_lab1.dir/ShuntingYard.cpp.o
  /usr/include/c++/9/bits/locale_classes.tcc
  /usr/include/c++/9/system_error
  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h
+ /usr/include/c++/9/stdexcept
  /usr/include/c++/9/streambuf
  /usr/include/c++/9/bits/streambuf.tcc
  /usr/include/c++/9/bits/basic_ios.h
@@ -177,8 +177,6 @@ CMakeFiles/algorithms_lab1.dir/ShuntingYard.cpp.o
  /usr/include/c++/9/bits/ostream.tcc
  /usr/include/c++/9/istream
  /usr/include/c++/9/bits/istream.tcc
- /usr/include/c++/9/sstream
- /usr/include/c++/9/bits/sstream.tcc
  /usr/include/c++/9/algorithm
  /usr/include/c++/9/utility
  /usr/include/c++/9/bits/stl_relops.h
@@ -189,10 +187,10 @@ CMakeFiles/algorithms_lab1.dir/ShuntingYard.cpp.o
  /usr/include/c++/9/bits/stl_construct.h
  /usr/include/c++/9/bits/uniform_int_dist.h
  /usr/include/c++/9/limits
- /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/Queue.h
- /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ArrayList.h
- /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/LinkedList.h
+ /usr/include/c++/9/sstream
+ /usr/include/c++/9/bits/sstream.tcc
  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/Stack.h
+ /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ArrayList.h
 
 CMakeFiles/algorithms_lab1.dir/main.cpp.o
  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/main.cpp
@@ -368,7 +366,7 @@ CMakeFiles/algorithms_lab1.dir/main.cpp.o
  /usr/include/c++/9/bits/istream.tcc
  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/LinkedList.h
  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ArrayList.h
- /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/sy.h
+ /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ShuntingYard.h
  /usr/include/c++/9/cstring
  /usr/include/string.h
  /usr/include/strings.h
@@ -385,4 +383,20 @@ CMakeFiles/algorithms_lab1.dir/main.cpp.o
  /usr/include/c++/9/sstream
  /usr/include/c++/9/bits/sstream.tcc
  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/Stack.h
+ /usr/include/c++/9/iomanip
+ /usr/include/c++/9/locale
+ /usr/include/c++/9/bits/locale_facets_nonio.h
+ /usr/include/c++/9/ctime
+ /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h
+ /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h
+ /usr/include/libintl.h
+ /usr/include/c++/9/bits/codecvt.h
+ /usr/include/c++/9/bits/locale_facets_nonio.tcc
+ /usr/include/c++/9/bits/locale_conv.h
+ /usr/include/c++/9/bits/unique_ptr.h
+ /usr/include/c++/9/tuple
+ /usr/include/c++/9/array
+ /usr/include/c++/9/bits/uses_allocator.h
+ /usr/include/c++/9/bits/invoke.h
+ /usr/include/c++/9/bits/quoted_string.h
 

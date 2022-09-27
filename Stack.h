@@ -56,6 +56,10 @@ public:
     bool isEmpty() {
         return ar.size() == 0;
     }
+
+    void makeEmpty() {
+        ar.makeEmpty();
+    }
 };
 
 
