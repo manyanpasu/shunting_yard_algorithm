@@ -31,7 +31,7 @@ public:
     char digits[11];
 
     enum Tokens {
-        NUMBER, OPERATION_1, OPERATION_2, OPERATION_3, SEPARATOR, FUNCTION, PARENTHESES, BADTOKEN
+        NUMBER, RIGHT_OPERATION_1, OPERATION_2, OPERATION_3, SEPARATOR, FUNCTION, PARENTHESES, BADTOKEN
     };
 
     bool tokenTypeIdentifierStep(const string &token, Tokens tokenType) {
@@ -40,7 +40,7 @@ public:
         int mmm = 0;
 //        int len = 0;
         switch (tokenType) {
-            case OPERATION_1: {
+            case RIGHT_OPERATION_1: {
                 ccc = &firstPriorityOperations[0][0];
                 nnn = sizeof(firstPriorityOperations) / sizeof(firstPriorityOperations[0]);
                 mmm = sizeof(firstPriorityOperations[0]) / sizeof(char);
@@ -103,8 +103,12 @@ public:
             return NUMBER;
         }
 
+        if (token == "(" || token == ")") {
+            return PARENTHESES;
+        }
+
         // OTHER TOKENS
-        Tokens otherTokens[] = {OPERATION_1, OPERATION_2, OPERATION_3, SEPARATOR, FUNCTION};
+        Tokens otherTokens[] = {RIGHT_OPERATION_1, OPERATION_2, OPERATION_3, SEPARATOR, FUNCTION};
         for (Tokens ttt: otherTokens) {
             if (tokenTypeIdentifierStep(token, ttt)) {
                 return ttt;
@@ -137,6 +141,11 @@ public:
                 Tokens tokenType = tokenTypeIdentifier(token);
                 std::cout << tokenType << std::endl;
 
+                if (tokenType == BADTOKEN) {
+                    std::cout << "bad token: " << token << std::endl;
+                    return;
+                }
+
                 std::pair<string, Tokens> currentPair = std::pair<string, Tokens>({token, tokenType});
 
                 if (tokenType == NUMBER) {
@@ -144,26 +153,24 @@ public:
                 } else if (tokenType == FUNCTION) {
                     tokensStack.push(currentPair);
                 } else if (tokenType == SEPARATOR) {
-                    while (!tokensStack.isEmpty()) {
-                        if (std::get<string>(tokensStack.peak()) != "(") {
-                            outputQueue += token += " ";
-                            break;
-                        }
+                    while (!tokensStack.isEmpty() && std::get<string>(tokensStack.peak()) != "(") {
+                        outputQueue += std::get<string>(tokensStack.pop()) += " ";
                     }
                     if (tokensStack.isEmpty()) {
                         std::cout << "there are mismatched parentheses "
                                      "OR missed separator\n\n";
                         return;
                     }
-                } else if (tokenType == OPERATION_1 ||
+                } else if (tokenType == RIGHT_OPERATION_1 ||
                            tokenType == OPERATION_2 ||
                            tokenType == OPERATION_3) {
 
                     auto top = tokensStack.peak();
                     Tokens topType = std::get<Tokens>(top);
-                    while ((topType == OPERATION_1 ||
+                    while ((topType == RIGHT_OPERATION_1 ||
                             topType == OPERATION_2 ||
-                            topType == OPERATION_3) && (topType <= tokenType)) {
+                            topType == OPERATION_3) && (topType <= tokenType)
+                           && (topType != tokenType || tokenType != RIGHT_OPERATION_1)) {
                         outputQueue += (std::get<string>(top)) += " ";
                         tokensStack.pop();
 
@@ -174,10 +181,17 @@ public:
                 } else if (token == "(") {
                     tokensStack.push(std::pair<string, Tokens>({"(", PARENTHESES}));
                 } else if (token == ")") {
-                    string topToken = std::get<string>(tokensStack.peak());
-                    Tokens topType = std::get<Tokens>(tokensStack.peak());
+                    string topToken;
+                    Tokens topType;
+                    if (!tokensStack.isEmpty()) {
+                        topToken = std::get<string>(tokensStack.peak());
+                        topType = std::get<Tokens>(tokensStack.peak());
+                    } else {
+                        std::cout << "there are mismatched parentheses\n\n";
+                        return;
+                    }
                     while (topToken != "(") {
-                        if (topType == OPERATION_1 ||
+                        if (topType == RIGHT_OPERATION_1 ||
                             topType == OPERATION_2 ||
                             topType == OPERATION_3) {
 
@@ -195,6 +209,8 @@ public:
                     }
                     if (topToken == "(") {
                         tokensStack.pop();
+                        topToken = std::get<string>(tokensStack.peak());
+                        topType = std::get<Tokens>(tokensStack.peak());
                     }
 
                     if (topType == FUNCTION) {

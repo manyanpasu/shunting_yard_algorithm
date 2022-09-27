@@ -144,7 +144,21 @@ int main() {
 
     ShuntingYard sy;
 
-    // ( 2 - 3 + 4 ) * ( 5 + 6 * 7 )
+    // input: ( 2 - 3 + 4 ) * ( 5 + 6 * 7 )
+    // output: 2 3 - 4 + 5 6 7 * + *
+
+    // input:  3 + 4 * 2 / ( 1 − 5 ) ^ 2 ^ 3
+    // output: 3 4 2 * 1 5 − 2 3 ^ ^ / +
+
+    // input:  sin ( cos ( 2 , 3 ) / 3 * 314 )
+    // output: 2 3 cos 3 / 314 * sin
+
+    // input: sin ( cos ( 2, 3 ) / 3 * 314 )
+    // output: bad token
+
+    // / / sin ( cos ( 2 , 3 ) / 3 * 314 )
+    // ???
+
     sy.convertFromInput();
 
     return 0;
