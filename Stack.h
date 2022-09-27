@@ -9,7 +9,7 @@
 
 // pop (снятие со стека),
 // push (добавление на стек),
-// peak (значение вершины стека без его снятия)
+// peakAddress (значение вершины стека без его снятия)
 
 template<typename T>
 class Stack {
@@ -37,10 +37,19 @@ public:
     T peak() {
         if (ar.size() != 0) {
             int lastIndex = ar.size() - 1;
-            T value = ar.get(lastIndex);
+            T value = ar.getElementCopy(lastIndex);
             return value;
         } else {
             return T();
+        }
+    }
+
+    const T *peakAddress() {
+        if (ar.size() != 0) {
+            int lastIndex = ar.size() - 1;
+            return ar.getAdress(lastIndex);
+        } else {
+            return nullptr;
         }
     }
 

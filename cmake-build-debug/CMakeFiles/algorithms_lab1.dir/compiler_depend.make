@@ -366,12 +366,10 @@ CMakeFiles/algorithms_lab1.dir/main.cpp.o: /mnt/c/Users/theta-sigma/CLionProject
   /usr/include/c++/9/bits/istream.tcc \
   /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/LinkedList.h \
   /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ArrayList.h \
-  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ShuntingYard.h \
+  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/sy.h \
   /usr/include/c++/9/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /usr/include/c++/9/sstream \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/algorithm \
   /usr/include/c++/9/utility \
   /usr/include/c++/9/bits/stl_relops.h \
@@ -382,9 +380,12 @@ CMakeFiles/algorithms_lab1.dir/main.cpp.o: /mnt/c/Users/theta-sigma/CLionProject
   /usr/include/c++/9/bits/stl_construct.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
   /usr/include/c++/9/limits \
-  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/Queue.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
   /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/Stack.h
 
+
+/mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/sy.h:
 
 /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/Stack.h:
 

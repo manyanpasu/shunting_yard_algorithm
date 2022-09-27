@@ -88,12 +88,6 @@
 		<Unit filename="/mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/LinkedList.h">
 			<Option target="algorithms_lab1"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/List.h">
-			<Option target="algorithms_lab1"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/Queue.h">
-			<Option target="algorithms_lab1"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ShuntingYard.cpp">
 			<Option target="algorithms_lab1"/>
 		</Unit>

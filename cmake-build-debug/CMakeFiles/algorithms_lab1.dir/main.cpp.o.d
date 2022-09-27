@@ -140,12 +140,21 @@ CMakeFiles/algorithms_lab1.dir/main.cpp.o: \
  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ArrayList.h \
  /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/ShuntingYard.h \
  /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
- /usr/include/c++/9/sstream /usr/include/c++/9/bits/sstream.tcc \
  /usr/include/c++/9/algorithm /usr/include/c++/9/utility \
  /usr/include/c++/9/bits/stl_relops.h /usr/include/c++/9/bits/stl_algo.h \
  /usr/include/c++/9/bits/algorithmfwd.h \
  /usr/include/c++/9/bits/stl_heap.h /usr/include/c++/9/bits/stl_tempbuf.h \
  /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/uniform_int_dist.h /usr/include/c++/9/limits \
- /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/Queue.h \
- /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/Stack.h
+ /usr/include/c++/9/sstream /usr/include/c++/9/bits/sstream.tcc \
+ /mnt/c/Users/theta-sigma/CLionProjects/algorithms_lab1/Stack.h \
+ /usr/include/c++/9/iomanip /usr/include/c++/9/locale \
+ /usr/include/c++/9/bits/locale_facets_nonio.h /usr/include/c++/9/ctime \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/9/bits/codecvt.h \
+ /usr/include/c++/9/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/9/bits/locale_conv.h \
+ /usr/include/c++/9/bits/unique_ptr.h /usr/include/c++/9/tuple \
+ /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
+ /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/bits/quoted_string.h

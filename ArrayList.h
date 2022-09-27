@@ -41,6 +41,10 @@ public:
         return array[index];
     }
 
+    const T *getAdress(int index) { // индекс всегда корректный
+        return array + index;
+    }
+
     T set(int index, T x) { // индекс всегда корректный
         array[index] = x;
         return array[index];
@@ -52,12 +56,12 @@ public:
         mSize = 0;
     }
 
-    T append(T x) { // под add имеется ввиду вставка
+    T append(T x) { // под insert имеется ввиду вставка
         this->add(mSize, x);
         return this->get(mSize - 1);
     }
 
-    T add(int index, T x) { // под add имеется ввиду вставка
+    T add(int index, T x) { // под insert имеется ввиду вставка
         if (mSize == capacity) {
             extend();
         }

@@ -33,15 +33,7 @@ public:
         }
     }
 
-//    T get(int index) {
-//        Node **current = &head;
-//        for (int i = 0; i < index; i++) {
-//            current = &((*current)->next);
-//        }
-//        return (*current)->data;
-//    }
-
-    T get(int index) {
+    T getElementCopy(int index) {
         Node *current = head;
         for (int i = 0; i < index; i++) {
             current = current->next;
@@ -49,7 +41,15 @@ public:
         return current->data;
     }
 
-    T add(int index, T x) { // под add имеется ввиду вставка
+    const T *getElementAddress(int index) {
+        Node *current = head;
+        for (int i = 0; i < index; i++) {
+            current = current->next;
+        }
+        return &(current->data);
+    }
+
+    void insert(int index, T x) { // под insert имеется ввиду вставка
         Node **current = &head;
         for (int i = 0; i < index; i++) {
             current = &((*current)->next);
@@ -59,20 +59,7 @@ public:
         (*current)->next = pNext;
 
         mSize++;
-
-        return (*current)->data;
     }
-
-//    int find(T x) {
-//        Node **current = &head;
-//        for (int i = 0; *current != nullptr; i++) {
-//            if ((*current)->data == x) {
-//                return i;
-//            }
-//            current = &((*current)->next);
-//        }
-//        return -1;
-//    }
 
     int find(T x) {
         Node *current = head;
@@ -84,25 +71,6 @@ public:
         }
         return -1;
     }
-
-//    void remove(int index) { // индекс всегда корректный
-//        if (index == 0) {
-//            Node *xxx = head->next;
-//            delete head;
-//            head = xxx;
-//        } else {
-//            Node **current = &head;
-//            for (int i = 0; i < index - 1; i++) {
-//                current = &((*current)->next);
-//            }
-//
-//            Node *xxx = (*current)->next;
-//            (*current)->next = ((*current)->next)->next;
-//            delete xxx;
-//        }
-//
-//        mSize--;
-//    }
 
     void remove(int index) { // индекс всегда корректный
         if (index == 0) {
